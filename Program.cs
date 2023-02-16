@@ -7,8 +7,10 @@ namespace DataStrctureAlgorithm1
         public static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Datastructure algorithm");
-            Insertion sort = new Insertion();
+            Bubble sort = new Bubble();
             sort.Display();
+
+
 
         }
     }
