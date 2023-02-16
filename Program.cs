@@ -8,15 +8,11 @@ namespace DataStrctureAlgorithm1
         public static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Datastructure algorithm");
-            Console.WriteLine("Enter starting point : ");
-            int start = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter Ending Point : ");
-            int end = Convert.ToInt32(Console.ReadLine());
-            ArrayList primeNumbers = Prime.FindPrimeNumbers(start, end);
-            Console.WriteLine($"\nAll the prime numbers between {start} and {end} are :");
-            foreach (int prime in primeNumbers)
+            Pallindrome obj = new Pallindrome();
+            for (int i = 1; i < 1000; i++)
             {
-                Console.WriteLine(prime);
+                if (obj.isPrime(i) && obj.isPalindrome(i))
+                    Console.WriteLine(i + " ");
             }
 
 
